@@ -33,17 +33,11 @@ offset = 0.1
 def PointToVector(point):
 	return Vector.ByCoordinates(point.X, point.Y, point.Z)
 
-class EasyPoint():
-
-	def __init__(self, x, y, z):
-		self.point = Point.ByCoordinates(x, y, z)
-		return self.point
-
-class EasyVector():
-
-	def __init__(self, x, y, z):
-		self.vector = Vector.ByCoordinates(x, y, z)
-		return self.vector
+def EasyPoint():
+	return Point.ByCoordinates(x, y, z)
+	
+def EasyVector():
+	return Vector.ByCoordinates(x, y, z)
 
 
 outs = []
