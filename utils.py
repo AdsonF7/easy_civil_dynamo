@@ -32,6 +32,13 @@ editor = adoc.Editor
 offset = 0.1
 def PointToVector(point):
 	return Vector.ByCoordinates(point.X, point.Y, point.Z)
+
+class EasyPoint():
+
+	def __init__(self, x, y, z):
+		self.point = Point.ByCoordnates(x, y, z)
+		return self.point
+	
 outs = []
 with adoc.LockDocument():
 	with adoc.Database as db:
